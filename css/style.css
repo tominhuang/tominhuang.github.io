@@ -418,6 +418,16 @@
 		{
 			position: relative;
 		}
+		
+		.box ul
+		{
+			list-style-type:circle;
+		}
+		
+		.box ul li 
+		{
+			text-align: left;
+		}
 
 /*********************************************************************************/
 /* Icons                                                                         */
