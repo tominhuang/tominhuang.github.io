@@ -424,10 +424,11 @@
 			list-style-type:circle;
 		}
 		
-		.box ul li 
+		.box ul li, .box p
 		{
 			text-align: left;
 		}
+
 
 /*********************************************************************************/
 /* Icons                                                                         */
