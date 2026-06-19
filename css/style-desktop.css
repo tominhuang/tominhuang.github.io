@@ -122,6 +122,22 @@
 
 	#nav
 	{
+		text-align: center;
+	}
+
+	#nav-header
+	{
+		display: none;
+	}
+
+	#nav ul
+	{
+		display: block !important;
+	}
+
+	#nav li
+	{
+		display: inline-block;
 	}
 
 		#nav a:hover

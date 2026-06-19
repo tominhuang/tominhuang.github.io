@@ -33,6 +33,11 @@ jQuery(function() {
 		jQuery('form .form-button-submit').click(function(e) { e.preventDefault(); jQuery(this).closest('form').submit(); });
 		jQuery('form .form-button-reset').click(function(e) { e.preventDefault(); jQuery(this).closest('form')[0].reset(); });
 	
+	// Mobile nav toggle
+		jQuery('#nav-toggle').click(function() {
+			jQuery('#nav ul').toggleClass('open');
+		});
+
 	// Links
 		jQuery('a').click(function(e) {
 			var t = jQuery(this), h = t.attr('href'), article;
@@ -41,6 +46,7 @@ jQuery(function() {
 			{
 				var pos = Math.max(article.parent().offset().top - _nav.height() + 15, 0);
 				e.preventDefault();
+				jQuery('#nav ul').removeClass('open');
 				_bh.animate({ scrollTop: pos }, 'slow', 'swing');
 			}
 		});

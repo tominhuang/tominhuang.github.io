@@ -156,12 +156,59 @@
 
 	#nav
 	{
+		text-align: left;
 	}
-	
-		#nav a
-		{
-			padding: 0.5em;
-		}
+
+	#nav-header
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	#nav-toggle
+	{
+		display: block;
+		background: none;
+		border: none;
+		color: #fff;
+		font-size: 1.5em;
+		line-height: 1;
+		padding: 0.6em 0.75em;
+		cursor: pointer;
+		flex-shrink: 0;
+	}
+
+	#nav-title
+	{
+		color: #fff;
+		font-weight: 700;
+		font-size: 1em;
+		letter-spacing: 0.01em;
+	}
+
+	#nav ul
+	{
+		display: none;
+		width: 100%;
+		padding: 0.25em 0 0.5em 0;
+	}
+
+	#nav ul.open
+	{
+		display: block;
+	}
+
+	#nav li
+	{
+		display: block;
+	}
+
+	#nav a
+	{
+		padding: 0.6em 1em;
+		display: block;
+		text-align: left;
+	}
 		
 /*********************************************************************************/
 /* Articles                                                                      */
